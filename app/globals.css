@@ -3,20 +3,20 @@
 @plugin "tailwindcss-animate";
 
 :root {
-  --background: #F9F6F0;
-  --foreground: #2C2A28;
-  --card: #F9F6F0;
-  --card-foreground: #2C2A28;
-  --popover: #F9F6F0;
-  --popover-foreground: #2C2A28;
+  --background: #FDFBF7;
+  --foreground: #1A1714;
+  --card: #FDFBF7;
+  --card-foreground: #1A1714;
+  --popover: #FDFBF7;
+  --popover-foreground: #1A1714;
   --primary: #BFA15F;
-  --primary-foreground: #2C2A28;
+  --primary-foreground: #1A1714;
   --secondary: #EBE5D9;
-  --secondary-foreground: #2C2A28;
+  --secondary-foreground: #1A1714;
   --muted: #EBE5D9;
   --muted-foreground: #5C5855;
   --accent: #EBE5D9;
-  --accent-foreground: #2C2A28;
+  --accent-foreground: #1A1714;
   --destructive: hsl(0 84.2% 60.2%);
   --destructive-foreground: hsl(0 0% 98%);
   --border: #BFA15F;

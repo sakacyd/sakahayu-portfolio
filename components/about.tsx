@@ -1,47 +1,90 @@
 import React from 'react';
+import { motion } from 'motion/react';
 import { Badge } from '@/components/ui/badge';
 
 export function About() {
-  const techStack = [
-    "C++", "Javascript", "Typescript", "React.js", "Next.js", 
-    "Laravel", "SQL", "Flutter", "Supabase"
+  const frameworksAndLanguages = [
+    "C++", "Javascript", "Typescript", "React.js", "Next.js", "Laravel"
+  ];
+  
+  const mobileAndInfra = [
+    "Flutter", "Supabase", "Docker", "Kubernetes"
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 24 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+  };
+
   return (
-    <section className="max-w-4xl mx-auto py-16 px-4">
-      <div className="bg-[#f9f7f1] dark:bg-zinc-900/50 rounded-xl shadow-sm border border-border p-8 md:p-12 relative overflow-hidden">
-        {/* Subtle texture/parchment effect */}
-        <div className="absolute inset-0 opacity-20 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#e5e7eb 1px, transparent 1px)', backgroundSize: '16px 16px' }}></div>
-        
-        <div className="relative z-10">
-          <h2 className="font-playfair text-3xl md:text-4xl font-bold mb-8 text-center md:text-left">About</h2>
-          
-          <div className="space-y-10">
-            <div>
-              <h3 className="font-semibold text-xl mb-3 flex items-center gap-2">
-                <span className="text-primary">🎓</span> Education
-              </h3>
-              <div className="flex flex-col border-l-2 border-primary/30 pl-4 py-1">
-                <p className="font-medium text-lg">Universitas Pancasila</p>
-                <p className="text-muted-foreground">Informatics Engineering / Software Engineering</p>
+    <section className="max-w-6xl mx-auto py-24 px-4">
+      <motion.div 
+        className="grid grid-cols-1 md:grid-cols-3 gap-6"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
+      >
+        {/* Cell 1: Main bio */}
+        <motion.div variants={itemVariants} className="md:col-span-2 md:row-span-2">
+          <div className="rounded-[2rem] bg-black/5 dark:bg-white/5 p-2 h-full">
+            <div className="rounded-[calc(2rem-0.5rem)] bg-card text-card-foreground p-8 md:p-12 h-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.15)] border border-border/50">
+              <h2 className="font-playfair text-3xl md:text-4xl font-bold mb-6">About Me</h2>
+              <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
+                <p>
+                  Fresh graduate from Universitas Pancasila, Informatics Engineering. 
+                  Passionate about building scalable web and mobile applications with a strong foundation in software engineering principles.
+                </p>
+                <p>
+                  I focus on creating elegant solutions to complex problems, combining technical excellence with an eye for design and user experience.
+                </p>
               </div>
             </div>
+          </div>
+        </motion.div>
 
-            <div>
-              <h3 className="font-semibold text-xl mb-4 flex items-center gap-2">
-                <span className="text-primary">💻</span> Tech Stack
-              </h3>
+        {/* Cell 2: Frameworks & Languages */}
+        <motion.div variants={itemVariants} className="md:col-span-1">
+          <div className="rounded-[2rem] bg-black/5 dark:bg-white/5 p-2 h-full">
+            <div className="rounded-[calc(2rem-0.5rem)] bg-card text-card-foreground p-6 md:p-8 h-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.15)] border border-border/50">
+              <h3 className="font-semibold text-xl mb-4 text-foreground">Languages & Web</h3>
               <div className="flex flex-wrap gap-2">
-                {techStack.map((tech) => (
-                  <Badge key={tech} variant="secondary" className="px-4 py-1.5 text-sm rounded-md hover:bg-primary/20 transition-colors">
+                {frameworksAndLanguages.map((tech) => (
+                  <Badge key={tech} variant="secondary" className="px-3 py-1 text-sm rounded-md hover:bg-primary/20 transition-colors">
                     {tech}
                   </Badge>
                 ))}
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </motion.div>
+
+        {/* Cell 3: Mobile & Infra */}
+        <motion.div variants={itemVariants} className="md:col-span-1">
+          <div className="rounded-[2rem] bg-black/5 dark:bg-white/5 p-2 h-full">
+            <div className="rounded-[calc(2rem-0.5rem)] bg-card text-card-foreground p-6 md:p-8 h-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.15)] border border-border/50">
+              <h3 className="font-semibold text-xl mb-4 text-foreground">Mobile & Infra</h3>
+              <div className="flex flex-wrap gap-2">
+                {mobileAndInfra.map((tech) => (
+                  <Badge key={tech} variant="secondary" className="px-3 py-1 text-sm rounded-md hover:bg-primary/20 transition-colors">
+                    {tech}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }

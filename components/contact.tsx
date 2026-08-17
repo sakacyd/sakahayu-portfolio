@@ -1,11 +1,21 @@
+"use client";
+
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail } from "lucide-react"
+import { Mail, ArrowRight } from "lucide-react"
+import { motion } from "motion/react"
 
 export function Contact() {
   return (
-    <section id="contact" className="py-24 space-y-12 max-w-2xl mx-auto px-6">
+    <motion.section 
+      id="contact" 
+      className="py-24 space-y-12 max-w-2xl mx-auto px-6"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+    >
       <div className="space-y-4 text-center">
         <h2 className="text-4xl font-playfair font-bold tracking-tight">Get in Touch</h2>
         <p className="text-muted-foreground font-lora max-w-xl mx-auto text-lg">
@@ -13,53 +23,58 @@ export function Contact() {
         </p>
       </div>
 
-      <div className="bg-background/50 backdrop-blur-sm border border-border/50 rounded-2xl p-8 shadow-sm">
-        <form action="https://formspree.io/f/xbgrzpzv" method="POST" className="space-y-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="space-y-2">
-              <label htmlFor="name" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 font-lora">
-                Name
-              </label>
-              <Input 
-                id="name"
-                name="name"
-                type="text" 
-                placeholder="John Doe" 
-                required 
-                className="font-lora transition-all bg-background/50"
-              />
+      <div className="p-2 bg-black/5 dark:bg-white/5 rounded-[2.25rem]">
+        <div className="bg-background border border-border/50 rounded-[1.75rem] p-8 shadow-sm">
+          <form action="https://formspree.io/f/xbgrzpzv" method="POST" className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-2">
+                <label htmlFor="name" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 font-lora">
+                  Name
+                </label>
+                <Input 
+                  id="name"
+                  name="name"
+                  type="text" 
+                  placeholder="John Doe" 
+                  required 
+                  className="font-lora transition-all bg-background/50"
+                />
+              </div>
+              <div className="space-y-2">
+                <label htmlFor="email" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 font-lora">
+                  Email
+                </label>
+                <Input 
+                  id="email" 
+                  name="email"
+                  type="email" 
+                  placeholder="john@example.com" 
+                  required 
+                  className="font-lora transition-all bg-background/50"
+                />
+              </div>
             </div>
             <div className="space-y-2">
-              <label htmlFor="email" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 font-lora">
-                Email
+              <label htmlFor="message" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 font-lora">
+                Message
               </label>
-              <Input 
-                id="email" 
-                name="email"
-                type="email" 
-                placeholder="john@example.com" 
+              <Textarea 
+                id="message" 
+                name="message"
+                placeholder="Your message here..." 
                 required 
-                className="font-lora transition-all bg-background/50"
+                rows={5}
+                className="font-lora resize-none transition-all bg-background/50"
               />
             </div>
-          </div>
-          <div className="space-y-2">
-            <label htmlFor="message" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 font-lora">
-              Message
-            </label>
-            <Textarea 
-              id="message" 
-              name="message"
-              placeholder="Your message here..." 
-              required 
-              rows={5}
-              className="font-lora resize-none transition-all bg-background/50"
-            />
-          </div>
-          <Button type="submit" className="w-full font-lora text-base h-11">
-            Send Message
-          </Button>
-        </form>
+            <Button type="submit" className="w-full font-lora text-base rounded-full pl-6 pr-2 py-6 bg-primary text-primary-foreground flex items-center justify-between group">
+              <span>Send Message</span>
+              <div className="w-10 h-10 rounded-full bg-background/20 dark:bg-black/20 flex items-center justify-center transition-transform group-hover:translate-x-1">
+                <ArrowRight className="w-5 h-5" />
+              </div>
+            </Button>
+          </form>
+        </div>
       </div>
 
       <div className="pt-8 border-t border-border/50">
@@ -120,6 +135,6 @@ export function Contact() {
           </a>
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
