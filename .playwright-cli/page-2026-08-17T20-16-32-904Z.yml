@@ -1,0 +1,89 @@
+- main [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: Welcome
+      - heading "Sakahayu Pribadi." [level=1] [ref=e6]
+      - paragraph [ref=e7]: Software Engineer — Full Stack
+    - img "Sakahayu Pribadi" [ref=e11]
+  - generic [ref=e13]:
+    - generic [ref=e16]:
+      - heading "About Me" [level=2] [ref=e17]
+      - generic [ref=e18]:
+        - paragraph [ref=e19]: Fresh graduate from Universitas Pancasila, Informatics Engineering. Passionate about building scalable web and mobile applications with a strong foundation in software engineering principles.
+        - paragraph [ref=e20]: I focus on creating elegant solutions to complex problems, combining technical excellence with an eye for design and user experience.
+    - generic [ref=e23]:
+      - heading "Languages & Web" [level=3] [ref=e24]
+      - generic [ref=e25]:
+        - generic [ref=e26]: C++
+        - generic [ref=e27]: Javascript
+        - generic [ref=e28]: Typescript
+        - generic [ref=e29]: React.js
+        - generic [ref=e30]: Next.js
+        - generic [ref=e31]: Laravel
+    - generic [ref=e34]:
+      - heading "Mobile & Infra" [level=3] [ref=e35]
+      - generic [ref=e36]:
+        - generic [ref=e37]: Flutter
+        - generic [ref=e38]: Supabase
+        - generic [ref=e39]: Docker
+        - generic [ref=e40]: Kubernetes
+  - generic [ref=e41]:
+    - generic [ref=e42]:
+      - generic [ref=e43]: Career Trajectory
+      - heading "Experience" [level=2] [ref=e44]
+    - generic [ref=e46]:
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - heading "PT. Indotech Energi Persada" [level=3] [ref=e49]
+          - paragraph [ref=e50]: Internship
+        - generic [ref=e51]: March 2025 – June 2025
+      - paragraph [ref=e53]: During my internship at PT. Indotech Energi Persada, I contributed to software development processes, working alongside experienced engineers to build and maintain robust applications. My responsibilities included developing frontend and backend features, collaborating on system design, and ensuring the delivery of high-quality software solutions.
+  - generic [ref=e54]:
+    - generic [ref=e55]:
+      - generic [ref=e56]: Curated Exhibits
+      - heading "Projects" [level=2] [ref=e57]
+    - generic [ref=e58]:
+      - generic [ref=e60]:
+        - generic [ref=e61]:
+          - generic [ref=e62]:
+            - generic [ref=e63]: Flutter
+            - generic [ref=e64]: Supabase
+            - generic [ref=e65]: Mobile App
+          - heading "Kovalen" [level=3] [ref=e66]
+          - paragraph [ref=e67]: Matchmaking app for study partners, conceptualized with swiping. Engineered with Flutter and Supabase.
+        - generic [ref=e68]: App
+      - generic [ref=e73]:
+        - generic [ref=e74]:
+          - generic [ref=e75]:
+            - generic [ref=e76]: Flutter
+            - generic [ref=e77]: Supabase
+            - generic [ref=e78]: Mobile App
+          - heading "Indotech Teknisi App" [level=3] [ref=e79]
+          - paragraph [ref=e80]: A comprehensive mobile tool for technicians to view schedules, manage tasks, and submit reporting logs. Engineered with Flutter and Supabase.
+        - generic [ref=e81]: App
+  - generic [ref=e85]:
+    - generic [ref=e86]:
+      - heading "Get in Touch" [level=2] [ref=e87]
+      - paragraph [ref=e88]: I am currently open for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+    - generic [ref=e91]:
+      - generic [ref=e92]:
+        - generic [ref=e93]:
+          - text: Name
+          - textbox "Name" [ref=e94]:
+            - /placeholder: John Doe
+        - generic [ref=e95]:
+          - text: Email
+          - textbox "Email" [ref=e96]:
+            - /placeholder: john@example.com
+      - generic [ref=e97]:
+        - text: Message
+        - textbox "Message" [ref=e98]:
+          - /placeholder: Your message here...
+      - button "Send Message" [ref=e99]
+    - generic [ref=e103]:
+      - link "GitHub" [ref=e104] [cursor=pointer]:
+        - /url: https://github.com/sakacyd
+      - link "LinkedIn" [ref=e108] [cursor=pointer]:
+        - /url: https://www.linkedin.com/in/sakahayu-pribadi/
+      - link "Email" [ref=e113] [cursor=pointer]:
+        - /url: mailto:psakahayu@gmail.com
