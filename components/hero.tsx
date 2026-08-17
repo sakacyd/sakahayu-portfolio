@@ -35,7 +35,7 @@ export function Hero() {
         <div className="rounded-[2rem] bg-black/5 dark:bg-white/5 p-2 w-full max-w-md mx-auto md:max-w-none md:ml-auto">
           <div className="rounded-[calc(2rem-0.5rem)] overflow-hidden relative shadow-[inset_0_1px_1px_rgba(255,255,255,0.15)] aspect-square md:aspect-auto">
             <Image 
-              src="/images/sakahayu_portrait.jpg" 
+              src="/images/sakahayu-pribadi.jpeg" 
               alt="Sakahayu Pribadi"
               width={800}
               height={800}
