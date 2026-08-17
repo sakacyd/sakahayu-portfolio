@@ -6,7 +6,7 @@ import { Contact } from "@/components/contact";
 
 export default function Home() {
   return (
-    <main className="max-w-[1400px] mx-auto px-6 py-32 flex flex-col gap-32">
+    <main className="max-w-[1400px] mx-auto px-6 pb-32 flex flex-col gap-32">
       <Hero />
       <About />
       <Experience />
