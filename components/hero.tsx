@@ -6,7 +6,7 @@ import { motion } from 'motion/react';
 
 export function Hero() {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-center min-h-[100dvh] pt-16 pb-12 md:py-20 px-4 max-w-7xl mx-auto gap-12 md:gap-24">
+    <section className="flex flex-col md:flex-row items-center justify-center pt-8 pb-12 md:pt-16 md:pb-20 px-4 max-w-7xl mx-auto gap-12 md:gap-24">
       <motion.div 
         className="w-full md:w-1/2 flex flex-col items-start"
         initial={{ opacity: 0, y: 24 }}
