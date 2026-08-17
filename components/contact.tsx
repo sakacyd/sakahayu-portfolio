@@ -14,7 +14,7 @@ export function Contact() {
       </div>
 
       <div className="bg-background/50 backdrop-blur-sm border border-border/50 rounded-2xl p-8 shadow-sm">
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" className="space-y-6">
+        <form action="https://formspree.io/f/xbgrzpzv" method="POST" className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-2">
               <label htmlFor="name" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 font-lora">
