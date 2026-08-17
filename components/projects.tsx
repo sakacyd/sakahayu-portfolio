@@ -6,13 +6,13 @@ import { motion } from 'motion/react';
 const projects = [
   {
     title: "Kovalen",
-    description: "Matchmaking app for study partners, conceptualized with swiping. Engineered with Flutter and Supabase.",
+    description: "Matchmaking app for study partners using a swipe interface. Built with Flutter and Supabase.",
     tags: ["Flutter", "Supabase", "Mobile App"],
     gradient: "bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-100 via-blue-50 to-slate-50 dark:from-blue-900/40 dark:via-background dark:to-background",
   },
   {
     title: "Indotech Teknisi App",
-    description: "A comprehensive mobile tool for technicians to view schedules, manage tasks, and submit reporting logs. Engineered with Flutter and Supabase.",
+    description: "A mobile app for technicians to view schedules, manage tasks, and submit logs. Built with Flutter and Supabase.",
     tags: ["Flutter", "Supabase", "Mobile App"],
     gradient: "bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-100 via-orange-50 to-slate-50 dark:from-amber-900/40 dark:via-background dark:to-background",
   }
@@ -28,9 +28,6 @@ export function Projects() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="flex flex-col items-center mb-20 text-center"
       >
-        <span className="text-xs font-bold tracking-[0.2em] uppercase text-muted-foreground mb-4">
-          Curated Exhibits
-        </span>
         <h2 className="text-4xl md:text-5xl font-playfair font-bold tracking-tight">Projects</h2>
       </motion.div>
 

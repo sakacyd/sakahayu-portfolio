@@ -13,9 +13,6 @@ export function Experience() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="flex flex-col items-center mb-16 text-center"
       >
-        <span className="text-xs font-bold tracking-[0.2em] uppercase text-muted-foreground mb-4">
-          Career Trajectory
-        </span>
         <h2 className="font-playfair text-4xl md:text-5xl font-bold tracking-tight">Experience</h2>
       </motion.div>
       
@@ -38,10 +35,7 @@ export function Experience() {
           </div>
           <div className="prose prose-lg dark:prose-invert font-lora text-muted-foreground leading-relaxed">
             <p>
-              During my internship at PT. Indotech Energi Persada, I contributed to software development processes, 
-              working alongside experienced engineers to build and maintain robust applications. My responsibilities 
-              included developing frontend and backend features, collaborating on system design, and ensuring 
-              the delivery of high-quality software solutions.
+              During my internship at PT. Indotech Energi Persada, I built and maintained frontend and backend features for their internal tools. I worked with the engineering team to design system architecture and ship production software.
             </p>
           </div>
         </div>

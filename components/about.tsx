@@ -44,11 +44,10 @@ export function About() {
               <h2 className="font-playfair text-3xl md:text-4xl font-bold mb-6">About Me</h2>
               <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  Fresh graduate from Universitas Pancasila, Informatics Engineering. 
-                  Passionate about building scalable web and mobile applications with a strong foundation in software engineering principles.
+                  I recently graduated from Universitas Pancasila with a degree in Informatics Engineering. I build web and mobile applications.
                 </p>
                 <p>
-                  I focus on creating elegant solutions to complex problems, combining technical excellence with an eye for design and user experience.
+                  My work focuses on practical design and reliable software architecture.
                 </p>
               </div>
             </div>

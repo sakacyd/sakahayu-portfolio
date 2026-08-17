@@ -19,7 +19,7 @@ export function Contact() {
       <div className="space-y-4 text-center">
         <h2 className="text-4xl font-playfair font-bold tracking-tight">Get in Touch</h2>
         <p className="text-muted-foreground font-lora max-w-xl mx-auto text-lg">
-          I am currently open for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+          I am currently open to new opportunities. Whether you have a question or want to say hi, send me a message and I'll get back to you.
         </p>
       </div>
 
@@ -37,7 +37,7 @@ export function Contact() {
                   type="text" 
                   placeholder="John Doe" 
                   required 
-                  className="font-lora transition-all bg-background/50"
+                  className="font-lora transition-all bg-black/5 dark:bg-white/5 border-border/50 focus-visible:bg-transparent"
                 />
               </div>
               <div className="space-y-2">
@@ -50,7 +50,7 @@ export function Contact() {
                   type="email" 
                   placeholder="john@example.com" 
                   required 
-                  className="font-lora transition-all bg-background/50"
+                  className="font-lora transition-all bg-black/5 dark:bg-white/5 border-border/50 focus-visible:bg-transparent"
                 />
               </div>
             </div>
@@ -64,12 +64,12 @@ export function Contact() {
                 placeholder="Your message here..." 
                 required 
                 rows={5}
-                className="font-lora resize-none transition-all bg-background/50"
+                className="font-lora resize-none transition-all bg-black/5 dark:bg-white/5 border-border/50 focus-visible:bg-transparent"
               />
             </div>
-            <Button type="submit" className="w-full font-lora text-base rounded-full pl-6 pr-2 py-6 bg-primary text-primary-foreground flex items-center justify-between group">
+            <Button type="submit" className="w-full font-lora text-base rounded-full pl-6 pr-2 py-6 bg-primary text-primary-foreground flex items-center justify-between group active:scale-[0.98] transition-transform">
               <span>Send Message</span>
-              <div className="w-10 h-10 rounded-full bg-background/20 dark:bg-black/20 flex items-center justify-center transition-transform group-hover:translate-x-1">
+              <div className="w-10 h-10 rounded-full bg-background/20 dark:bg-black/20 flex items-center justify-center transition-transform group-hover:translate-x-1 group-hover:-translate-y-[1px]">
                 <ArrowRight className="w-5 h-5" />
               </div>
             </Button>
