@@ -6,9 +6,9 @@ import { motion } from 'motion/react';
 
 export function Hero() {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-center pt-0 pb-12 md:pt-0 md:pb-20 px-4 max-w-7xl mx-auto gap-12 md:gap-24">
+    <section className="grid grid-cols-1 md:grid-cols-2 grid-rows-[1fr_auto_1fr] md:grid-rows-1 items-center min-h-[100dvh] px-4 max-w-7xl mx-auto md:gap-24 w-full">
       <motion.div 
-        className="w-full md:w-1/2 flex flex-col items-start"
+        className="w-full row-start-1 md:row-start-1 md:col-start-1 flex flex-col items-start self-end md:self-center pb-8 md:pb-0"
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -26,7 +26,7 @@ export function Hero() {
       </motion.div>
 
       <motion.div 
-        className="w-full md:w-1/2"
+        className="w-full row-start-2 md:row-start-1 md:col-start-2 self-center"
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -45,6 +45,7 @@ export function Hero() {
           </div>
         </div>
       </motion.div>
+      <div className="row-start-3 md:hidden h-full w-full"></div>
     </section>
   );
 }
