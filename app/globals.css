@@ -33,6 +33,8 @@
 @theme inline {
   --font-sans: var(--font-lora);
   --font-serif: var(--font-playfair);
+  --font-playfair: var(--font-playfair);
+  --font-lora: var(--font-lora);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
